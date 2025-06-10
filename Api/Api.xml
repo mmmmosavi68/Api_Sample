@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="P:Api.Controllers.v1.AddressDto.Country">
+            <summary>
+            3-letter ISO country code
+            </summary>
+            <example>Iran</example>
+        </member>
+        <member name="P:Api.Controllers.v1.AddressDto.City">
+            <summary>
+            Name of city
+            </summary>
+            <example>Seattle</example>
+        </member>
+        <member name="M:Api.Controllers.v1.TestController.Address(Api.Controllers.v1.AddressDto)">
+            <summary>
+            Asign an address to user
+            </summary>
+            <param name="addressDto">Address of user</param>
+            <remarks>Awesomeness!</remarks>
+            <response code="200">Address added</response>
+            <response code="400">Address has missing/invalid values</response>
+            <response code="500">Oops! Can't create your Address right now</response>
+        </member>
+        <member name="M:Api.Controllers.v1.UserController.Token(Api.Models.TokenRequest,System.Threading.CancellationToken)">
+            <summary>
+            This method genarate Jwt Token
+            </summary>
+            <param name="tokenRequest">The information of token request</param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+            <exception cref="T:Common.Exceptions.BadRequestException"></exception>
+        </member>
+    </members>
+</doc>
